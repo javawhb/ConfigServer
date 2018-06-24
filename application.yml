@@ -1,0 +1,6 @@
+#application* (application.properties, application.yml, application-*.properties, and so on) are shared between all client applications
+#此配置文件内配置被所有客户端共享，每次请求都会返回。
+
+GlobalConfig:
+  serverCode: MyConfigServer
+  serverName: 配置服务器
