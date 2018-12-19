@@ -1,5 +1,0 @@
-#此配置文件内配置只被名称为MyConfigClient的客户端使用。
-
-ClientConfig:
-  code: MyConfigClient
-  name: 配置客户端

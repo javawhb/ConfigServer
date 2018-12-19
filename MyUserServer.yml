@@ -1,0 +1,25 @@
+#此配置文件内配置只被名称为MyUserServer的客户端使用。
+
+userList:
+  - userName: zhangsan
+    password: 123456
+    realName: 张三
+    userType: admin
+    
+  - userName: lisi
+    password: 654321
+    realName: 李四
+    userType: admin
+    
+  - userName: wangwu
+    password: 098765
+    realName: 王五
+    userType: user
+
+user:
+  config:
+    userList:
+      - userName: zhaoliu
+        password: 666666
+        realName: 赵六
+        userType: user
