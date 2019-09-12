@@ -1,15 +1,23 @@
 #此配置文件内配置只被名称为MyOrderServer的客户端使用。
-user:
-  config:
-    userList:
-      - userName: jiayi
-        password: 123456
-        realName: 甲一
-        userType: admin
+order:
+  data:
+    orderList:
+      - orderName: 测试订单1
+        orderId: 111111
+        orderType: 1
+        orderTime: 2019-09-12 10:10:00
+      - orderName: 测试订单2
+        orderId: 222222
+        orderType: 2
+        orderTime: 2019-09-12 11:10:00
 
-userList:
-  - userName: binger
-    password: 666666
-    realName: 丙二
-    userType: user
+orderList:
+  - orderName: 测试订单3
+    orderId: 33333
+    orderType: 1
+    orderTime: 2019-09-12 13:10:00
+  - orderName: 测试订单4
+    orderId: 444444
+    orderType: 2
+    orderTime: 2019-09-12 14:10:00
 

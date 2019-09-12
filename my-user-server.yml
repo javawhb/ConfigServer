@@ -17,7 +17,7 @@ userList:
     userType: user
 
 user:
-  config:
+  data:
     userList:
       - userName: zhaoliu
         password: 666666
