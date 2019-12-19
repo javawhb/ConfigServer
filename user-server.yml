@@ -1,5 +1,39 @@
-#此配置文件内配置只被名称为MyUserServer的客户端使用。
+#此配置文件内配置只被名称为UserServer的客户端使用。
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    httptrace:
+      enabled: true
+    metrics:
+      enabled: true
+    threaddump:
+      enabled: true
+    health:
+      show-details: always
+
+spring:
+  rabbitmq:
+    addresses: 172.16.1.175:5672
+    username: test
+    password: test
+    virtual-host: cloud
+
+  zipkin:
+    base-url: http://localhost:9411
+
+  sleuth:
+    sampler:
+      probability: 1.0
+
+server:
+  port: 8080
+
+
+#以下是自定义数据配置
 userList:
   - userName: zhangsan
     password: 123456

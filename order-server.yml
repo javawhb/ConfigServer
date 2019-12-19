@@ -1,4 +1,4 @@
-#此配置文件内配置只被名称为MyOrderServer的客户端使用。
+#此配置文件内配置只被名称为OrderServer的客户端使用。
 order:
   data:
     orderList:
@@ -20,3 +20,4 @@ orderList:
     orderId: 444444
     orderType: 2
     orderTime: 2019-09-12 14:10:00
+

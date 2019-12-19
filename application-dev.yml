@@ -1,7 +1,7 @@
 #此配置文件内配置被所有客户端共享，每次请求都会返回，用于全局配置。
 
 projectConfig:
-  name: SpringCound
-  remark: SpringCloud概念验证工程
-  label: test
+  name: SpringCound-dev
+  remark: SpringCloud-dev概念验证工程
+  label: test-dev
 

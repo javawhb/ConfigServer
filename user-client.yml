@@ -1,0 +1,37 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    httptrace:
+      enabled: true
+    metrics:
+      enabled: true
+    threaddump:
+      enabled: true
+    health:
+      show-details: always
+
+spring:
+  rabbitmq:
+    addresses: 172.16.1.175:5672
+    username: test
+    password: test
+    virtual-host: cloud
+
+  zipkin:
+    base-url: http://localhost:9411
+
+  sleuth:
+    sampler:
+      probability: 1.0
+
+server:
+  port: 8090
+
+feign:
+  hystrix:
+    #开启hystrix
+    enabled: true
+    
