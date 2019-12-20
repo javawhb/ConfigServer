@@ -26,12 +26,8 @@ spring:
     #base-url: http://localhost:9411
     sender:
       type: rabbit
-    rabbitmq:
-      addresses: 172.16.1.175:5672
-      username: zipkin
-      password: zipkin
-      virtual-host: zipkin
-
+      rabbitmq:
+        queue: zipkin1
   sleuth:
     sampler:
       probability: 1.0
