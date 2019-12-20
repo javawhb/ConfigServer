@@ -16,8 +16,8 @@ management:
 spring:
   rabbitmq:
     addresses: 172.16.1.175:5672
-    username: test
-    password: test
+    username: cloud
+    password: cloud
     virtual-host: cloud
 
   zipkin:
