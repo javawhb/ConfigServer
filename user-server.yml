@@ -1,40 +1,4 @@
-#此配置文件内配置只被名称为UserServer的客户端使用。
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
-  endpoint:
-    httptrace:
-      enabled: true
-    metrics:
-      enabled: true
-    threaddump:
-      enabled: true
-    health:
-      show-details: always
-
-spring:
-  rabbitmq:
-    addresses: 172.16.1.175:5672
-    username: cloud
-    password: cloud
-    virtual-host: cloud
-
-  zipkin:
-    #使用http方式发送链路追踪数据
-    #base-url: http://localhost:9411
-    #使用rabbitmq方式发送链路追踪数据
-    sender:
-      type: rabbit
-    #此设置不支持动态刷新
-    rabbitmq:
-      queue: cloudzipkin
-
-  sleuth:
-    sampler:
-      probability: 1.0
+#此配置文件内配置只被名称为user-server的客户端使用。
 
 server:
   port: 8080
