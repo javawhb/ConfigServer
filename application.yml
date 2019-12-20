@@ -25,6 +25,7 @@ spring:
   zipkin:
     #使用http方式发送链路追踪数据
     #base-url: http://localhost:9411
+    base-url:
     #使用rabbitmq方式发送链路追踪数据
     sender:
       type: rabbit
