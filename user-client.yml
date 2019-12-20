@@ -21,7 +21,14 @@ spring:
     virtual-host: cloud
 
   zipkin:
-    base-url: http://localhost:9411
+    #使用http方式发送链路追踪数据
+    #base-url: http://localhost:9411
+    #使用rabbitmq方式发送链路追踪数据
+    sender:
+      type: rabbit
+    #此设置不支持动态刷新
+    rabbitmq:
+      queue: cloudzipkin
 
   sleuth:
     sampler:
